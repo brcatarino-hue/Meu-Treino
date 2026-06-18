@@ -2,14 +2,15 @@
   "name": "Meu Treino ABCD",
   "short_name": "Meu Treino",
   "description": "App de treino ABC com cardio e frequência",
-  "start_url": "./index.html",
+  "start_url": "/Meu-Treino/index.html",
+  "scope": "/Meu-Treino/",
   "display": "standalone",
   "background_color": "#232838",
   "theme_color": "#232838",
   "orientation": "portrait",
   "icons": [
     {
-      "src": "icon.svg",
+      "src": "/Meu-Treino/icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
