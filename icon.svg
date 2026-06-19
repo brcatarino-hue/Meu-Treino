@@ -1,15 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="100" fill="#232838"/>
-  <!-- haltere esquerdo -->
-  <rect x="60" y="230" width="90" height="52" rx="10" fill="#FF6B4A"/>
-  <rect x="60" y="210" width="28" height="92" rx="8" fill="#FF6B4A"/>
-  <rect x="122" y="218" width="28" height="76" rx="8" fill="#FF6B4A"/>
-  <!-- barra -->
-  <rect x="150" y="245" width="212" height="22" rx="8" fill="#F4F5F8"/>
-  <!-- haltere direito -->
-  <rect x="362" y="230" width="90" height="52" rx="10" fill="#FF6B4A"/>
-  <rect x="424" y="210" width="28" height="92" rx="8" fill="#FF6B4A"/>
-  <rect x="362" y="218" width="28" height="76" rx="8" fill="#FF6B4A"/>
-  <!-- texto -->
-  <text x="256" y="370" font-family="Arial Black, sans-serif" font-size="72" font-weight="900" fill="#FF6B4A" text-anchor="middle" letter-spacing="4">TREINO</text>
+  <!-- Fundo escuro com cantos arredondados -->
+  <rect width="512" height="512" rx="110" fill="#232838"/>
+  <!-- Linha decorativa laranja no topo -->
+  <rect x="60" y="60" width="392" height="8" rx="4" fill="#FF6B4A"/>
+  <!-- Linha decorativa laranja na base -->
+  <rect x="60" y="444" width="392" height="8" rx="4" fill="#FF6B4A"/>
+  <!-- Iniciais BRC centralizadas -->
+  <text x="256" y="320" 
+    font-family="Arial Black, sans-serif" 
+    font-size="220" 
+    font-weight="900" 
+    fill="#F4F5F8" 
+    text-anchor="middle" 
+    letter-spacing="-8">BRC</text>
+  <!-- Destaque laranja nas iniciais -->
+  <text x="256" y="320" 
+    font-family="Arial Black, sans-serif" 
+    font-size="220" 
+    font-weight="900" 
+    fill="none"
+    stroke="#FF6B4A"
+    stroke-width="4"
+    text-anchor="middle" 
+    letter-spacing="-8">BRC</text>
 </svg>
