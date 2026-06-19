@@ -1,7 +1,7 @@
 {
-  "name": "Meu Treino ABCD",
-  "short_name": "Meu Treino",
-  "description": "App de treino ABC com cardio e frequência",
+  "name": "BRC",
+  "short_name": "BRC",
+  "description": "App de rotina, treino e alimentação",
   "start_url": "/Meu-Treino/index.html",
   "scope": "/Meu-Treino/",
   "display": "standalone",
