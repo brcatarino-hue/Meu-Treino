@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Meu Treino">
+<meta name="apple-mobile-web-app-title" content="BRC">
 <meta name="theme-color" content="#232838">
-<title>Meu Treino ABCD</title>
+<title>BRC</title>
 <link rel="manifest" href="/Meu-Treino/manifest.json">
 <link rel="apple-touch-icon" href="/Meu-Treino/icon.svg">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -86,11 +86,64 @@
   .cardio-check{min-width:30px;height:30px;border-radius:9px;border:2px solid var(--line);background:var(--card2);display:flex;align-items:center;justify-content:center;font-size:1rem;color:transparent;cursor:pointer;transition:all .15s;margin-left:auto}
   .cardio-card.feito .cardio-check{background:var(--ok);border-color:var(--ok);color:#143314}
   .cardio-card.feito h3{text-decoration:line-through;opacity:.6}
+  /* Rotina */
+  .rotina-dia{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+  .rotina-dia h2{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.06em;margin-bottom:10px;color:var(--accent)}
+  .bloco{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+  .bloco:last-child{border-bottom:none;padding-bottom:0}
+  .bloco-check{min-width:28px;height:28px;border-radius:8px;border:2px solid var(--line);background:var(--card2);display:flex;align-items:center;justify-content:center;font-size:.9rem;color:transparent;cursor:pointer;transition:all .15s;flex-shrink:0}
+  .bloco.feito .bloco-check{background:var(--ok);border-color:var(--ok);color:#143314}
+  .bloco.feito .bloco-titulo{text-decoration:line-through;opacity:.5}
+  .bloco-info{flex:1}
+  .bloco-titulo{font-size:.88rem;font-weight:600;line-height:1.25}
+  .bloco-hora{font-size:.7rem;color:var(--muted);margin-top:3px}
+  .bloco-icone{font-size:1.3rem;flex-shrink:0}
+  .estudo-tag{display:inline-block;margin-top:4px;font-size:.65rem;font-weight:600;padding:2px 8px;border-radius:99px;border:1px solid var(--accent);color:var(--accent);background:transparent}
+  .rotina-prog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:12px}
+  .rotina-prog .txt{display:flex;justify-content:space-between;font-size:.8rem;color:var(--muted);margin-bottom:8px}
+  .semana-nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+  .semana-nav h2{font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:.05em}
+  .semana-nav button{width:36px;height:36px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--text);font-size:1rem;cursor:pointer}
+  /* Alimentação */
+  .alim-card{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
+  .alim-card.feito{opacity:.6}
+  .alim-topo{display:flex;align-items:center;gap:10px;padding:12px;cursor:pointer}
+  .alim-icone{font-size:1.4rem;flex-shrink:0}
+  .alim-info{flex:1}
+  .alim-titulo{font-size:.92rem;font-weight:700}
+  .alim-hora{font-size:.7rem;color:var(--muted);margin-top:2px}
+  .alim-check{min-width:30px;height:30px;border-radius:9px;border:2px solid var(--line);background:var(--card2);display:flex;align-items:center;justify-content:center;font-size:1rem;color:transparent;cursor:pointer;transition:all .15s;flex-shrink:0}
+  .alim-card.feito .alim-check{background:var(--ok);border-color:var(--ok);color:#143314}
+  .alim-card.feito .alim-titulo{text-decoration:line-through}
+  .alim-detalhe{display:none;padding:0 12px 12px;border-top:1px solid var(--line)}
+  .alim-card.aberto .alim-detalhe{display:block}
+  .alim-item{font-size:.82rem;color:#D7DBE6;padding:6px 0;border-bottom:1px solid var(--line);line-height:1.45}
+  .alim-item:last-child{border-bottom:none}
+  .alim-item b{color:var(--text)}
+  .alim-obs{font-size:.75rem;color:var(--muted);margin-top:8px;padding:8px;background:var(--card2);border-radius:8px;line-height:1.5}
+  .agua-card{background:var(--card);border:1px solid var(--costas);border-left:4px solid var(--costas);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+  .agua-titulo{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;color:var(--costas);margin-bottom:8px}
+  .agua-copos{display:flex;gap:6px;flex-wrap:wrap}
+  .copo{width:36px;height:36px;border-radius:8px;border:2px solid var(--costas);background:var(--card2);display:flex;align-items:center;justify-content:center;font-size:1rem;cursor:pointer;transition:all .15s}
+  .copo.cheio{background:var(--costas);border-color:var(--costas)}
+  .supl-card{background:var(--card);border:1px solid var(--abs);border-left:4px solid var(--abs);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+  .supl-titulo{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;color:var(--abs);margin-bottom:8px}
+  .supl-item{display:flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid var(--line)}
+  .supl-item:last-child{border-bottom:none}
+  .supl-check{min-width:26px;height:26px;border-radius:7px;border:2px solid var(--line);background:var(--card2);display:flex;align-items:center;justify-content:center;font-size:.85rem;color:transparent;cursor:pointer;transition:all .15s}
+  .supl-item.feito .supl-check{background:var(--ok);border-color:var(--ok);color:#143314}
+  .supl-item.feito span{text-decoration:line-through;opacity:.5}
+  .alim-cor-a{border-left:4px solid var(--abs)}
+  .alim-cor-b{border-left:4px solid var(--accent)}
+  .alim-cor-c{border-left:4px solid var(--pernas)}
+  .alim-cor-d{border-left:4px solid var(--ombro)}
+  .alim-cor-e{border-left:4px solid var(--costas)}
+  .livre-tag{display:inline-block;margin-top:4px;font-size:.65rem;font-weight:600;padding:2px 8px;border-radius:99px;border:1px solid var(--ok);color:var(--ok);background:transparent}
 </style>
 </head>
 <body>
 <header>
-  <h1>Meu Treino ABCD</h1>
+  <h1>BRC</h1>
   <p id="subtitulo">Marque os exercícios e acompanhe sua frequência</p>
 </header>
 <nav id="abas"></nav>
@@ -166,10 +219,10 @@ const salvarChecks=()=>store.set('treino_checks_'+hojeStr(),JSON.stringify(check
 
 /* ---------- construção das páginas ---------- */
 const abas=document.getElementById('abas'),paginas=document.getElementById('paginas');
-const ordem=['A','B','C','D','CAL'];
+const ordem=['A','B','C','D','ROT','ALIM','CAL'];
 ordem.forEach(t=>{
  const b=document.createElement('button');
- b.textContent=t==='CAL'?'📅 Frequência':'Treino '+t;
+ b.textContent=t==='CAL'?'📅':t==='ROT'?'🗓 Rotina':t==='ALIM'?'🥗 Dieta':'Treino '+t;
  b.dataset.t=t;
  b.addEventListener('click',()=>ativar(t));
  abas.appendChild(b);
@@ -331,12 +384,254 @@ function atualizarProgressoD(f){
 }
 
 
+/* ---------- dados da rotina ---------- */
+const DIAS_SEMANA=['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'];
+const ESTUDO_DIA={
+ 0:'📖 Claude IA / Leilões de Imóveis', // Domingo
+ 1:'📘 Empreendedorismo',               // Segunda
+ 2:'🤖 Claude IA',                      // Terça
+ 3:'📈 Investimentos',                  // Quarta
+ 4:'🏠 Leilões de Imóveis',             // Quinta
+ 5:'📘 Empreendedorismo',               // Sexta
+ 6:'📈 Investimentos',                  // Sábado
+};
+const TREINO_DIAS=[1,3,5]; // Seg, Qua, Sex
+const CRIANCAS_DIAS=[2,4,6,0]; // Ter, Qui, Sáb, Dom
+
+function blocosParaDia(dow){
+ const blocos=[];
+ blocos.push({emoji:'🌅',titulo:'Café da manhã e escola',hora:'06:00 – 07:30',cor:'var(--abs)'});
+ blocos.push({emoji:'💼',titulo:'Trabalho',hora:'07:45 – 18:30',cor:'var(--costas)'});
+ blocos.push({emoji:'🍽️',titulo:'Janta e banho das crianças',hora:'18:30 – 20:00',cor:'var(--pernas)'});
+ if(TREINO_DIAS.includes(dow)){
+  blocos.push({emoji:'🏋️',titulo:'Treino',hora:'20:00 – 21:00',cor:'var(--accent)'});
+ }
+ if(CRIANCAS_DIAS.includes(dow)){
+  blocos.push({emoji:'😴',titulo:'Crianças dormirem',hora:'20:00 – 21:00',cor:'var(--ombro)'});
+ }
+ blocos.push({emoji:'📚',titulo:'Estudos · '+ESTUDO_DIA[dow],hora:'21:30 – 22:30',cor:'var(--cardio)',estudo:true});
+ return blocos;
+}
+
+let rotinaDiaOffset=0;
+function montarRotina(){
+ const pag=document.getElementById('pagROT');
+ const hoje=new Date();
+ hoje.setDate(hoje.getDate()+rotinaDiaOffset);
+ const dow=hoje.getDay();
+ const dateStr=hoje.getFullYear()+'-'+String(hoje.getMonth()+1).padStart(2,'0')+'-'+String(hoje.getDate()).padStart(2,'0');
+ const nomeDia=DIAS_SEMANA[dow];
+ const blocos=blocosParaDia(dow);
+ const checksKey='rotina_checks_'+dateStr;
+ const feitos=new Set(lerJSON(checksKey,[]));
+
+ const total=blocos.length;
+ const f=feitos.size;
+ const pct=total>0?Math.round(100*f/total):0;
+
+ let html=`<div class="semana-nav">
+  <button id="diaAnt">‹</button>
+  <h2>${nomeDia}, ${String(hoje.getDate()).padStart(2,'0')}/${String(hoje.getMonth()+1).padStart(2,'0')}</h2>
+  <button id="diaProx">›</button>
+ </div>
+ <div class="rotina-prog">
+  <div class="txt"><span>Progresso do dia</span><span>${f} / ${total} blocos</span></div>
+  <div class="barra"><div style="width:${pct}%;height:100%;background:var(--ok);border-radius:99px;transition:width .25s"></div></div>
+ </div>
+ <div class="rotina-dia">
+  <h2>📋 ${nomeDia}</h2>`;
+
+ blocos.forEach((b,i)=>{
+  const feito=feitos.has(i);
+  html+=`<div class="bloco${feito?' feito':''}" data-i="${i}">
+   <div class="bloco-icone">${b.emoji}</div>
+   <div class="bloco-info">
+    <div class="bloco-titulo">${b.titulo}</div>
+    <div class="bloco-hora">⏰ ${b.hora}</div>
+    ${b.estudo?`<span class="estudo-tag">Estudo do dia</span>`:''}
+   </div>
+   <div class="bloco-check" data-i="${i}">✓</div>
+  </div>`;
+ });
+ html+=`</div>`;
+ pag.innerHTML=html;
+
+ pag.querySelectorAll('.bloco-check').forEach(ck=>{
+  ck.addEventListener('click',()=>{
+   const idx=parseInt(ck.dataset.i);
+   const f2=new Set(lerJSON(checksKey,[]));
+   f2.has(idx)?f2.delete(idx):f2.add(idx);
+   store.set(checksKey,JSON.stringify([...f2]));
+   montarRotina();
+  });
+ });
+ pag.querySelector('#diaAnt').addEventListener('click',()=>{rotinaDiaOffset--;montarRotina()});
+ pag.querySelector('#diaProx').addEventListener('click',()=>{rotinaDiaOffset++;montarRotina()});
+}
+
+/* ---------- alimentação ---------- */
+const REFEICOES=[
+ {id:'supl_manha',emoji:'💊',titulo:'Fórmula 1 (manhã)',hora:'Ao acordar · com 200mL de água',cor:'alim-cor-a',
+  itens:['Fórmula 1 anti-inflamatória — 1 cápsula com água'],obs:'Tomar antes do café da manhã, em jejum.'},
+ {id:'desjejum',emoji:'🌅',titulo:'Desjejum',hora:'~06:00 · quando sentir fome',cor:'alim-cor-b',
+  itens:['PROTEÍNA (escolha 1): 3 ovos (mexidos, omelete, cozidos) | Iogurte natural integral + 10g whey | 2 ovos + 20g queijo minas','CARBOIDRATO (escolha 1): 150g vegetais de baixo amido | 150g mamão/frutas vermelhas/melão/banana | 1-2 fatias pão integral (máx 2x/semana)','☕ Café puro 150-200mL (opcional) — adoçar só com xilitol, eritritol ou stevia'],obs:'💧 1L de água ao longo da manhã. Não é obrigatório comer assim que acordar — espere a fome.'},
+ {id:'almoco',emoji:'🍽️',titulo:'Almoço',hora:'~12:00',cor:'alim-cor-c',
+  itens:['PROTEÍNA: Carne (180-190g) com abóbora cabotiá + tomate + cenoura + cebola refogados','🥦 Base: proteína + vegetais variados — volume alto!','AMIDO (2x/semana — Ter e Qui ou Sáb e Dom): 150g batata/mandioca ou arroz integral/feijão/lentilha'],obs:'Sem bebida durante a refeição (máx 200mL água com limão). Sem sobremesas. Monte um único prato, sem repetição. 💧 1L de água ao longo da tarde.'},
+ {id:'lanche',emoji:'🍎',titulo:'Lanche da tarde',hora:'~15:00-17:00 · conforme fome',cor:'alim-cor-d',
+  itens:['PROTEÍNA (escolha 1): 2 ovos | Iogurte natural integral | 70g frango/carne magra | 15g whey protein','OU OPÇÃO (escolha 1): 100-150g vegetais de baixo amido | 100-150g frutas (mamão, melão, banana, maçã…) | 20g oleaginosas (castanhas, amêndoas, nozes) | 50g abacate'],obs:'Refeição opcional — em dias de pouca fome, pode ir direto para o jantar. Pode fracionar ao longo da tarde.'},
+ {id:'jantar',emoji:'🌙',titulo:'Jantar',hora:'~18:30-20:00',cor:'alim-cor-e',
+  itens:['PROTEÍNA: 4 ovos (Seg a Qui) | 140g frango/peixe/carne (Sex a Dom) | 2 ovos + 110g frango/carne/peixe','🥦 Vegetais de baixo amido à vontade — base da refeição','AMIDO (2x/semana, mesmos dias do almoço): 150g batata/mandioca ou lentilha/quinoa | 40g aveia'],obs:'Sem sobremesas açucaradas. Se usar sopa, faça só com vegetais de baixo amido.'},
+ {id:'supl_noite',emoji:'💊',titulo:'Fórmula 2 (antes de dormir)',hora:'Antes de dormir · com 200mL de água',cor:'alim-cor-a',
+  itens:['Fórmula 2 blend vitaminas e minerais — 1 cápsula com água'],obs:'Tomar imediatamente antes de deitar.'},
+];
+
+let alimentacaoDiaOffset=0;
+function montarAlimentacao(){
+ const pag=document.getElementById('pagALIM');
+ const hoje=new Date();
+ hoje.setDate(hoje.getDate()+alimentacaoDiaOffset);
+ const dow=hoje.getDay();
+ const dateStr=hoje.getFullYear()+'-'+String(hoje.getMonth()+1).padStart(2,'0')+'-'+String(hoje.getDate()).padStart(2,'0');
+ const nomeDia=DIAS_SEMANA[dow];
+ const checksKey='alim_checks_'+dateStr;
+ const feitos=new Set(lerJSON(checksKey,[]));
+ const aguaKey='alim_agua_'+dateStr;
+ let coposAgua=parseInt(store.get(aguaKey)||'0');
+
+ const total=REFEICOES.length;
+ const f=feitos.size;
+ const pct=total>0?Math.round(100*f/total):0;
+
+ let html=`<div class="semana-nav">
+  <button id="alimAnt">‹</button>
+  <h2>${nomeDia}, ${String(hoje.getDate()).padStart(2,'0')}/${String(hoje.getMonth()+1).padStart(2,'0')}</h2>
+  <button id="alimProx">›</button>
+ </div>
+ <div class="rotina-prog">
+  <div class="txt"><span>Refeições do dia</span><span>${f} / ${total} feitas</span></div>
+  <div class="barra"><div style="width:${pct}%;height:100%;background:var(--ok);border-radius:99px;transition:width .25s"></div></div>
+ </div>`;
+
+ // Água
+ html+=`<div class="agua-card">
+  <div class="agua-titulo">💧 Água diária — meta 3L (12 copos de 250mL)</div>
+  <div class="agua-copos">`;
+ for(let i=0;i<12;i++){
+  html+=`<div class="copo${i<coposAgua?' cheio':''}" data-copo="${i}">💧</div>`;
+ }
+ html+=`</div><div style="font-size:.72rem;color:var(--muted);margin-top:6px">${coposAgua} / 12 copos · ${coposAgua*250}mL</div></div>`;
+
+ // Suplemento Vitamina D3 (semanal - domingo)
+ if(dow===0){
+  const vitdKey='alim_vitd_'+dateStr;
+  const vitdFeito=store.get(vitdKey)==='1';
+  html+=`<div class="supl-card">
+   <div class="supl-titulo">💊 Vitamina D3 — dose semanal (domingo)</div>
+   <div class="supl-item${vitdFeito?' feito':''}" id="vitdItem">
+    <div class="supl-check" id="vitdCheck">✓</div>
+    <span>10 gotas Vitamina D3 (7000UI) — 1x por semana</span>
+   </div></div>`;
+ }
+
+ // Refeições
+ REFEICOES.forEach((r,i)=>{
+  const feito=feitos.has(i);
+  html+=`<div class="alim-card ${r.cor}${feito?' feito':''}">
+   <div class="alim-topo" data-ri="${i}">
+    <div class="alim-icone">${r.emoji}</div>
+    <div class="alim-info">
+     <div class="alim-titulo">${r.titulo}</div>
+     <div class="alim-hora">⏰ ${r.hora}</div>
+    </div>
+    <div class="alim-check" data-ci="${i}">✓</div>
+   </div>
+   <div class="alim-detalhe">
+    ${r.itens.map(it=>`<div class="alim-item">${it}</div>`).join('')}
+    <div class="alim-obs">💡 ${r.obs}</div>
+   </div>
+  </div>`;
+ });
+
+ // Livre da semana
+ html+=`<div class="alim-card" style="border-left:4px solid var(--ok)">
+  <div class="alim-topo">
+   <div class="alim-icone">🎉</div>
+   <div class="alim-info">
+    <div class="alim-titulo">Refeição livre — 1x por semana</div>
+    <div class="alim-hora">Escolha 1 opção no final de semana com bom senso</div>
+    <span class="livre-tag">Semanal</span>
+   </div>
+  </div>
+  <div class="alim-detalhe">
+   <div class="alim-item">🍫 50g chocolate ao leite ou 70g chocolate amargo 80%+</div>
+   <div class="alim-item">🍣 Japonês: até 10 sashimis + 5 sushis pequenos</div>
+   <div class="alim-item">🍕 1 lanche ou 2 pedaços pequenos de pizza</div>
+   <div class="alim-item">🍷 Até 3 taças de vinho ou 2 doses vodca/gin ou 3 long necks</div>
+   <div class="alim-obs">💡 Apenas 1 escolha por semana. Sem repetição e sem acompanhamentos calóricos.</div>
+  </div>
+ </div>`;
+
+ pag.innerHTML=html;
+
+ // Eventos copos de água
+ pag.querySelectorAll('.copo').forEach(cp=>{
+  cp.addEventListener('click',()=>{
+   const idx=parseInt(cp.dataset.copo);
+   coposAgua=coposAgua===idx+1?idx:idx+1;
+   store.set(aguaKey,String(coposAgua));
+   montarAlimentacao();
+  });
+ });
+
+ // Eventos refeições - toggle aberto
+ pag.querySelectorAll('.alim-topo').forEach(tp=>{
+  tp.addEventListener('click',(e)=>{
+   if(e.target.classList.contains('alim-check'))return;
+   tp.closest('.alim-card').classList.toggle('aberto');
+  });
+ });
+
+ // Eventos check refeições
+ pag.querySelectorAll('.alim-check').forEach(ck=>{
+  ck.addEventListener('click',(e)=>{
+   e.stopPropagation();
+   const idx=parseInt(ck.dataset.ci);
+   const f2=new Set(lerJSON(checksKey,[]));
+   f2.has(idx)?f2.delete(idx):f2.add(idx);
+   store.set(checksKey,JSON.stringify([...f2]));
+   montarAlimentacao();
+  });
+ });
+
+ // Vitamina D3
+ const vitdCheck=pag.querySelector('#vitdCheck');
+ if(vitdCheck){
+  vitdCheck.addEventListener('click',()=>{
+   const vitdKey='alim_vitd_'+dateStr;
+   const atual=store.get(vitdKey)==='1';
+   store.set(vitdKey,atual?'0':'1');
+   montarAlimentacao();
+  });
+ }
+
+ pag.querySelector('#alimAnt').addEventListener('click',()=>{alimentacaoDiaOffset--;montarAlimentacao()});
+ pag.querySelector('#alimProx').addEventListener('click',()=>{alimentacaoDiaOffset++;montarAlimentacao()});
+
+ // Toggle refeição livre
+ const livreCard=pag.querySelector('.alim-card:last-child');
+ if(livreCard){
+  livreCard.querySelector('.alim-topo').addEventListener('click',()=>livreCard.classList.toggle('aberto'));
+ }
+}
+
 function ativar(t){
  [...abas.children].forEach(b=>b.classList.toggle('active',b.dataset.t===t));
  document.querySelectorAll('.pagina').forEach(p=>p.classList.remove('ativa'));
  document.getElementById('pag'+t).classList.add('ativa');
  if(t==='CAL')montarCalendario();
  if(t==='D')montarTreinoD();
+ if(t==='ROT')montarRotina();
+ if(t==='ALIM')montarAlimentacao();
  window.scrollTo({top:0});
 }
 
